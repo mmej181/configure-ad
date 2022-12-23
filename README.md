@@ -6,12 +6,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>How to:</h2>
 Install and Configure Active Directory
 
-<br>
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
 - Active Directory Domain Services
 - PowerShell
 
@@ -20,14 +17,13 @@ Install and Configure Active Directory
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+<h2>Stages</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Setup / Connect
+- Install AD
+- Create/Connect Admin/Users
 
-<h2>Deployment and Configuration Steps</h2>
+<h2>Steps</h2>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
