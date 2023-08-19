@@ -55,7 +55,7 @@ Step 6: Restart DC VM and reconnect to it using the new user just created (new f
 <p>
 <h2>Stage 3: Create/Connect Admin/Users</h2>
 
-Step 7: In ADUC (Active Directory Users and Computers) and create 3 OU’s (Organizational Unit), one called “Employees”, the second called “Admins”, and the last one called “Clients”.
+Step 7: In ADUC (Active Directory Users and Computers) and create 2 OU’s (Organizational Unit), one called “Employees”, the second called “Admins”.
 
 Step 8: Create a new user in Employees and add to the ‘Domain Admins’ Security Group. Log out of DC VM and log back in as this new user.
 
