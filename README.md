@@ -33,7 +33,11 @@ Step 1: Create 2 VMs in Azure; The first is the Domain Controller on Windows Ser
 
 Step 2: Set the DC’s NIC Private IP address to static. Check that both VMs are on the same Vnet.
 
+![](media/STEP%202%20-%20DC%20NIC.png)
+
 Step 3: From the Client VM, endless ping the DC VM’s private IP. Login to DC VM to enable ICMPv4 traffic in it’s Firewall. Check Client VM for successful ping.
+
+![](media/STEP%203%20-%20ENABLE%20ICMP.png)
 
 </p>
 <br />
@@ -43,6 +47,8 @@ Step 3: From the Client VM, endless ping the DC VM’s private IP. Login to DC V
 <h2>Stage 2: Install AD</h2>
 
 Step 4: In DC VM, using the Server Manager, install Active Directory Domain Services.
+
+![](media/STEP%204%20-%20ADDS.png)
 
 Step 5: Promote DC VM as a Domain Controller by setting up a ‘new forest’. 
 
@@ -57,9 +63,15 @@ Step 6: Restart DC VM and reconnect to it using the new user just created (new f
 
 Step 7: In ADUC (Active Directory Users and Computers) and create 2 OU’s (Organizational Unit), one called “Employees”, the second called “Admins”.
 
+![](media/STEP%207%20-%20OU.png)
+
 Step 8: Create a new user in Employees and add to the ‘Domain Admins’ Security Group. Log out of DC VM and log back in as this new user.
 
+![](media/STEP%208%20-%20DOMAIN%20ADMINS.png)
+
 Step 9: Set Client VM’s DNS settings to the DC’s VM Private IP address; then restart Client VM. Log back into Client VM as admin and join it to the DC’s IP address. Drag Client VM into the OU named “Clients”.
+
+![](media/STEP%209%20-%20DNS.png)
 
 Step 10: In Client VM, using your created user open up system properties. Allow ‘Domain Users’ access to remote desktop. 
 
