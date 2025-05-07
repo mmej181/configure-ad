@@ -75,7 +75,7 @@ Step 9: Set Client VM’s DNS settings to the DC’s VM Private IP address; then
 
 Step 10: In Client VM, using your created user open up system properties. Allow ‘Domain Users’ access to remote desktop. 
 
-Step 11: In DC VM, as your admin created user, open Powershell (as an administrator) to create additional users.
+Step 11: In DC VM, as your admin created user, open PowerShell (as an administrator) to create additional users.
 
 </p>
 <br />
